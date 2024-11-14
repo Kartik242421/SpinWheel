@@ -7,4 +7,5 @@ public class Entries : MonoBehaviour
 {
     public TextMeshProUGUI _name;
     public TextMeshProUGUI score;
+    public TextMeshProUGUI workshop;
 }

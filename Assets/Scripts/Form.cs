@@ -8,7 +8,7 @@ using Unity.VisualScripting;
 
 public class Form : MonoBehaviour
 {
-    public TMP_InputField Name, Email, number;
+    public TMP_InputField Name, Workshop, number;
     public Button SubmitButton;
     private AuthHandler _authHandler;
 
@@ -22,7 +22,7 @@ public class Form : MonoBehaviour
         GameModeDDOL.instance.number = null;
         GameModeDDOL.instance.score = 0;
         Name.text = ""; 
-        Email.text = "";
+        Workshop.text = "";
 
         _authHandler = AuthHandler.instance;
         OSK.gameObject.SetActive(false);
@@ -30,7 +30,7 @@ public class Form : MonoBehaviour
 
     public void OnValueChangeName()
     {
-        if (Name.text.Length >= 3 && number.text.Length == 10)
+        if (Name.text.Length >= 3)
         {
             SubmitButton.interactable = true;
         }
@@ -43,13 +43,13 @@ public class Form : MonoBehaviour
     public void OnSubmitButton()
     {
         GameModeDDOL.instance.playerName = Name.text;
-        GameModeDDOL.instance.email = Email.text;
+        GameModeDDOL.instance.email = Workshop.text;
         GameModeDDOL.instance.number = number.text;
 
 
-      _authHandler.Login(Name.text,number.text);
-        // Load the desired scene
-        SceneManager.LoadScene("MOBIL"); // Replace "YourSceneName" with the actual scene name
+      _authHandler.Login(Name.text,number.text, Workshop.text);
+        
+        SceneManager.LoadScene("MOBIL"); 
     }
 
     public void onSelectedField(TMP_InputField inputField)

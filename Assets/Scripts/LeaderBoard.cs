@@ -26,6 +26,8 @@ public class LeaderBoard : MonoBehaviour
         Entries entry=    go.GetComponent<Entries>();
             entry._name.text = user.name;
             entry.score.text= user.score;
+            entry.workshop.text = user.workshop;
+            print(entry);
         }
     }
 }

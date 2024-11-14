@@ -35,7 +35,7 @@ public class SaveSystem : MonoBehaviour
 
         foreach (UserData userData in data)
         {
-            sw.WriteLine($"{userData.name},{userData.score},{userData.phoneNumber}");
+            sw.WriteLine($"{userData.name},{userData.score},{userData.phoneNumber},{userData.workshop}");
         }
         sw.Close();
     }
@@ -52,7 +52,7 @@ public class SaveSystem : MonoBehaviour
         foreach (string line in text)
         {
             string[] data = line.Split(",");
-            users.Add(new UserData { name = data[0], score = data[1], phoneNumber = data[2] }) ;
+            users.Add(new UserData { name = data[0], score = data[1], phoneNumber = data[2], workshop = data[3] }) ;
         }
         return users;
     }

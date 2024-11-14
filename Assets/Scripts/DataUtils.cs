@@ -8,4 +8,5 @@ public struct UserData
     public string name;
     public string phoneNumber;
     public string score;
+    public string workshop;
 }
