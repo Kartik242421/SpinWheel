@@ -847,11 +847,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 3ca7c74d-eeb5-4fd0-bbdf-addff4d4e9d6
+  cloudProjectId: 277763bb-9117-4530-a729-3d11005342ae
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: SpinWheel (1)
-  organizationId: ggauraang
+  projectName: SpinWheel
+  organizationId: kartik242421
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
